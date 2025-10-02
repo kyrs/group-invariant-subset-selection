@@ -45,7 +45,7 @@ def main(dataset_name):
     # contrastive_loss_fn = SupConLoss(contrast_mode='all')
     for epoch in range(epoch): 
         for data in dl:
-            idx,x,labels = data 
+            __,x,_ = data 
             optimizer.zero_grad()
             x = x.to("cuda")
             x = x.squeeze(1)

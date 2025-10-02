@@ -26,7 +26,7 @@ def main():
         model = eqvModel(hidden_dim=32, emb_dim=8, num_layers=5).to("cuda") # setting dim as 8
     elif flag == "classical":
         print("Using baseline model")
-        pass  # NOTE: embd dim: 2
+        pass  
     else:
         raise  NonImplementedError(f"Unknown model type: {flag}")
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3) 

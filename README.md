@@ -1,6 +1,7 @@
 # Invariant Subset Selection
 
-This project provides an implementation of "Invariant Subset Selection." The primary goal is to understand and leverage the invariant geometric structure within a dataset to select a high-quality subset. The core assumption is that while the dataset's labels may be noisy, the inherent invariance can guide the selection of samples with clean labels. This resulting "clean" subset can then be used to significantly improve the performance of various downstream machine learning tasks.
+This project provides an implementation of "Group Invariant Subset Selection." The primary objective is to understand and exploit the invariant geometric structure within a dataset to select a high-quality subset. The key intuition is that, although the dataset’s labels may be noisy, the underlying invariances can guide the selection of samples with clean labels. The resulting "clean" subset can then be used to substantially improve the performance of downstream machine learning tasks.
+
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -19,10 +20,9 @@ pip install -r requirements.txt
 ## Installation
 
 1.  **Clone the repository:**
-
+    Download the repository and change the dir
     ```bash
-    git clone [https://github.com/your-username/invariant-subset-selection.git](https://github.com/your-username/invariant-subset-selection.git)
-    cd invariant-subset-selection
+    cd group-invariant-subset-selection
     ```
 
 2.  **Download the Rotated MNIST Dataset:**
@@ -40,9 +40,12 @@ pip install -r requirements.txt
 
     The final path for the dataset file must be exactly: `src/real_world_exp/data/ROTMNIST/mnist_all_rotation_normalized_float_combined.amat`.
 
-3.  **Train the GNN models for representations:**
+3.  **Train the  models associated with invariant representation function :**
+    - Train the SO(2) and SE(3) invariant encoders and replace the path in config.py
+    - Code for training the encoders are provided in src/real_world_exp/se3/train_invariant_enc.py and src/real_world_exp/so2/trainer.py
 
-    **Please add the appropriate commands for this!!!!!!!!!!!!!!!**
+    
+
 ## Running Experiments
 
 This project includes experiments for four datasets demonstrating different types of invariance.
