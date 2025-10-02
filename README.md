@@ -1,4 +1,4 @@
-# Invariant Subset Selection
+# Group Invariant Subset Selection
 
 This project provides an implementation of "Group Invariant Subset Selection." The primary objective is to understand and exploit the invariant geometric structure within a dataset to select a high-quality subset. The key intuition is that, although the dataset’s labels may be noisy, the underlying invariances can guide the selection of samples with clean labels. The resulting "clean" subset can then be used to substantially improve the performance of downstream machine learning tasks.
 
@@ -44,7 +44,7 @@ pip install -r requirements.txt
     - Train the SO(2) and SE(3) invariant encoders and replace the path in config.py
     - Code for training the encoders are provided in src/real_world_exp/se3/train_invariant_enc.py and src/real_world_exp/so2/trainer.py
 
-    
+
 
 ## Running Experiments
 
