@@ -48,8 +48,7 @@ pip install -r requirements.txt
 
 ## Running Experiments
 
-This project includes experiments for four datasets demonstrating different types of invariance.
-
+This project includes experiments for four datasets demonstrating different types of invariance. To our code for group-inv, follow these commands. 
 ### Synthetic Datasets
 
   - **Orthogonally Invariant Group:**
@@ -67,7 +66,21 @@ This project includes experiments for four datasets demonstrating different type
     ```
 
 ### Real-World Datasets
+Our implementation supports a comparative analysis of two distinct feature representation strategies. The desired approach can be specified using the `--method` command-line argument as detailed in the table below. 
 
+| Representation Type      |  Command Argument                      |
+| :----------------------- | :------------------------------------ |
+| **Group Invariant** - Ours(group inv) |  `--method ours`                       |
+| **Contrastive Learning** - Ours(contrastive) |   `--method contrastive_cutstats`       |
+
+**Example Usage:**
+
+```bash
+# To run an experiment with our group invariant representation
+python run.py --config <your_config> --method ours
+
+# To run an experiment with the contrastive learning baseline
+python run.py --config <your_config> --method contrastive_cutstats
   - **Rotated MNIST (SO(2) Invariance):**
 
     ```bash
