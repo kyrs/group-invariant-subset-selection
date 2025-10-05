@@ -55,14 +55,14 @@ This project includes experiments for four datasets demonstrating different type
   - **Orthogonally Invariant Group:**
 
     ```bash
-    # Placeholder: Command to run the orthogonally invariant experiment
+    # Command to run the orthogonally invariant experiment
     python main.py --data ortho --method ours --noise_prob 0.45 --subset_size_percent 0.4
     ```
 
   - **Permutation Invariant Group:**
 
     ```bash
-    # Placeholder: Command to run the permutation invariant experiment
+    # Command to run the permutation invariant experiment
     python main.py --data perm --method ours --noise_prob 0.45 --subset_size_percent 0.4
     ```
 
@@ -71,14 +71,14 @@ This project includes experiments for four datasets demonstrating different type
   - **Rotated MNIST (SO(2) Invariance):**
 
     ```bash
-    # Placeholder: Command to run the Rotated MNIST experiment
+    # Command to run the Rotated MNIST experiment
     python main.py --data rot_mnist --method ours --noise_prob 0.45 --subset_size_percent 0.4
     ```
 
   - **Tetris (SE(3) Invariance):**
 
     ```bash
-    # Placeholder: Command to run the Tetris experiment
+    # Command to run the Tetris experiment
     python main.py --data tetris --method ours --noise_prob 0.45 --subset_size_percent 0.4
     ```
 
